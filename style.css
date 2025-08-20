@@ -1,0 +1,142 @@
+body {
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+     ;
+}
+spline-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Pushes it behind everything else */
+}
+.Wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "Header Header"
+    "Block1 Block1"
+    "footer footer";
+}
+#Header {
+    
+    grid-area: Header;
+    Height:75px;
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items:center;
+    color: white;
+    h1{
+        margin-left: 20px;
+    }
+    li{
+        display: inline; 
+    }
+    a{
+        text-align: right ;
+        text-decoration: underline;
+        color: white;
+        font-size: 25px;
+        padding: 20px;
+    }
+    nav{
+       margin-right: 200px;
+
+    }
+    
+}
+.Block1 {
+    grid-area: Block1;
+    margin-top: 20px;
+    height: 500px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+
+.footer {
+    grid-area: footer;
+    height: 95px;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: azure;
+}
+.Overview {
+    margin-left: 100px;
+    width: fit-content;
+    height:400px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 10px 10px 100px rgba(255, 0, 64, 0.8);
+    transition: box-shadow 0.5s ease-in;
+   
+    border-radius: 25px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "Overview Overview"
+    "age1 age2"
+    "uni1 uni2"
+    "degree1 degree2"
+    "year1 year2"
+    ;
+}
+.Overview:hover{
+    box-shadow: 5px 5px 50px rgb(0, 200, 2550);
+    cursor: pointer;
+}
+.Overview-heading{
+    grid-area: Overview;
+    text-align: center;
+    margin-bottom: 50px;
+    color:rgb(0, 200, 255);
+   
+}
+.age1 {
+    grid-area: age1;
+    margin-bottom: 50px;
+   
+
+}
+.age2 {
+    grid-area: age2;
+    margin-bottom: 50px;
+}
+.uni1 {
+    grid-area: uni1;
+    margin-bottom: 50px;
+}
+.uni2 {
+    grid-area: uni2;
+    margin-bottom: 50px;
+}
+.degree1{
+    grid-area: degree1;
+    margin-bottom: 50px;
+}
+.degree2{
+    grid-area: degree2;
+    margin-bottom: 50px;
+}
+.year1{
+    grid-area: year1;
+    
+}
+.year2{
+    grid-area: year2;
+    
+}
+
