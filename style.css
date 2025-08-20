@@ -142,5 +142,32 @@ spline-viewer {
     grid-area: year2;
     
 }
+@media (max-width:480px) {
+   img {
+      width:7.7rem;
+      height:7.7rem;
+   }
+   .Overview-heading,
+   .age1,
+   .age2,
+   .uni1,
+   .uni2,
+   .degree1,
+   .degree2 {
+      marging-bottom:1rem;
+   }
+   #header {
+      height:1.3rem;
+   }
+   a{
+      font-size:0.5rem;
+   }
+   .Overview-heading{
+      font-size:0.5rem;
+   }
+   
+   
+}
+
 
 
