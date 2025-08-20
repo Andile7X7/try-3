@@ -154,7 +154,7 @@ spline-viewer {
    .uni2,
    .degree1,
    .degree2 {
-      marging-bottom:1rem;
+      margin-bottom:1rem;
    }
    #header {
       height:1.3rem;
@@ -168,6 +168,7 @@ spline-viewer {
    
    
 }
+
 
 
 
